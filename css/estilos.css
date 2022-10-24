@@ -1,0 +1,318 @@
+
+html{
+    font-size: 62.5%
+}
+
+
+ @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body{
+   height: 100%; 
+   font-family: 'Noto Sans', sans-serif;
+   background-color:white; 
+}
+
+
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  background-color: rgb(115, 218, 20);
+} 
+
+
+nav li a:hover{
+  color: #dd1f9e;
+  display: inline-block;
+  text-decoration: none;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+img.redimension{
+   width: 100px;
+   height: 100px;
+}
+
+.listas{
+    list-style-type: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+div.imagen {
+    width: 50%;
+    margin: 20px auto;
+    background-color: rgb(115, 218, 20);
+    color: #fff;
+    padding: 15px;
+  }
+ 
+
+ div.imagen img.izquierda {
+    float: left;
+    margin-right: 15px;
+}
+  
+div.imagen img.derecha {
+    float: right;
+    margin-left: 15px;
+}
+  
+div.reset {
+    clear: both;
+} 
+
+
+.galeria{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100px;
+
+}
+
+.fotos img{
+    width: 200px; /*ancho*/
+    height: 200px; /*alto*/
+   /*  object-fit: cover; */
+
+}
+
+.presentacion h2,
+.productos h2,
+.nosotros h2
+ {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+  
+
+
+.present {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  background-color: rgb(115, 218, 20) ;
+
+}
+
+.present img{
+  width: 200px;
+  height: 200px;
+  
+  transform: all 3s;
+}
+
+ .present img:hover{
+  height: 250px;
+  width: 350px;
+  transform: translateX(30px);
+  transform: rotate(120deg);
+ }
+  
+
+.present p {
+  margin-left: 100px;
+
+}
+
+
+
+footer {
+  background-color: rgb(115, 218, 20) ;
+  color: #edf2f4;
+  text-align: center;
+  padding: 0.1px;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 0.2fr 0.1fr 0.1fr 0fr;
+  grid-template-areas:
+  "logo menu menu"
+  "presentacion presentacion presentacion"
+  "productos productos productos"
+  "footer footer footer"; 
+} 
+
+.logo{
+grid-area: logo;
+}
+
+.nosotros{
+  grid-area: nosotros;
+}
+
+.header{
+grid-area: menu;
+}
+
+.presentacion{
+grid-area: presentacion;
+
+}
+
+.productos{
+grid-area: productos;
+}
+
+.footer{
+grid-area: footer;
+}
+
+
+.grid{
+background-color: blue;
+width: 100%;
+height: 500px;
+display: grid;
+grid-template-columns: repeat(3, 30%);
+grid-template-rows: repeat(4, 100px);
+
+justify-items: center; 
+align-items: center; 
+
+justify-content: center;
+align-content: center;
+
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: rgb(115, 218, 20); 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: rgb(115, 218, 20); 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+.input {
+  width: 100px;
+  transition: all 2s;
+}
+.input:focus{
+  width: 200px;
+  background-color: #dd1f9e;
+}
+ 
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: rgb(115, 218, 20); 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: white; 
+  border-color: rgb(115, 218, 20); 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: rgb(115, 218, 20); 
+}
+
+
+span{
+  color:white; 
+}
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #111011;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #dd1f9e;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #dd1f9e;
+  }
+
+  
+ 
+
